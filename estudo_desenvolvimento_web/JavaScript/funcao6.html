@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+
+	<script type="text/javascript">
+		function mudarCor(){
+			var cor = document.getElementById("paleta").value;
+			document.getElementById("caixa").style.backgroundColor=cor;
+
+
+		}
+
+
+	</script>
+
+	<title>Document</title>
+</head>
+<body style="background-color:#790000">
+
+
+	<div id="caixa" style="width: 500px; height: 500px;"></div>
+	<br>
+	<input type="color" id="paleta" onchange="mudarCor();">
+
+	
+</body>
+</html>

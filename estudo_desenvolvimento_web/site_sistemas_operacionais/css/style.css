@@ -1,0 +1,483 @@
+/**
+* Folha de estilo principal do site html5 + css3
+* @author José de Assis
+*/
+
+/************* Importando fonts **************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+
+/************* Principal **************/
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #e8e8e8;
+	/* Uso de uma imagem como background */
+	/*background-image: url("../imagens/background.jpg");*/
+	/*background-attachment: fixed; /*fixa o background*/
+	/*background-size: cover; /*manter o tamanho de forma responsiva */
+	font-size: 1em; /*1 em = 16px */
+}   
+
+#main{
+	max-width: 1024px;
+	background-color: #ffffff;
+	margin: 0 auto; /*centralizar a div */
+	margin-top: 50px; /*box model*/
+}
+
+/************** Cabeçalho ***************/
+header{
+	width: 100%;
+	height: 150px;
+	/*background-color: #ffff00; /*dica para ajustar elementos*/
+	margin-bottom: 20px;
+}
+
+header img{
+	width: 180px;
+	height: 160px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+/************** Menu **************/
+
+nav{
+	width: 100%;
+	max-width: 1024px;	
+	position: absolute;
+	z-index: 3;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	
+	
+
+}
+
+nav > ul > li{
+	float: left;
+	width: 24.903%; /* 4 elementos do menu primário */
+	/*border-right: 1px solid #000000;*/
+}
+
+nav > ul > li > a{
+	font-size: 1.125em;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 15px;
+	display: block;
+	text-align: center; 
+	background-color: #000000;
+}
+
+nav ul li a:hover{
+	background-color: #00bccc;
+	transition: all 0.27s; /* efeito transição (0 a 1) */
+}
+
+nav li ul{
+	display: none;
+}
+
+nav li:hover ul{
+	display: block;
+}
+
+/* Desenhando um triângulo no css */
+.Detalhes:after{ /*atributo after (após o conteúdo)*/
+	content:''; /* content: insere um conteúdo no css */
+	border: 5px solid transparent;
+	/*border-left-color: #ff0000;*/
+	/*border-right-color: #00ff00;*/
+	/*border-bottom-color: #0000ff;*/
+	border-top-color: #e8e8e8;
+	/* alinhamento */
+	display: inline-block;
+	vertical-align: middle;	
+}
+
+.Mobile{
+	display: none;
+}
+
+/* Classe usada pelo JS para fixar o menu */
+.Fixar{
+	position: fixed;
+	top: 0;
+	
+}
+
+
+/*********** Conteudo em destaque - home **********/
+
+
+/****banner ******/
+
+#banner{
+	margin-top: 72px;
+	max-width: 1024px;
+	height: 350px;
+	display: flex; /*Usado para flexibilizar layout*/
+	justify-content: center;
+	align-items: center;
+
+}
+
+#banner img{
+	filter: brightness(30%);
+
+}
+
+#banner h1{
+	position: absolute;
+	color: #ffffff;
+	padding-top: 180px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.9em;
+	text-transform:uppercase; /* maiuscula*/ 
+
+}
+
+/****heading****/
+
+#heading{
+	width: 80%;
+	margin: 0 auto;
+	padding: 35px;
+	text-align: center;
+	font-weight: 400;
+}
+
+
+#Windows{
+	font-weight: 600;
+	color: #cc470d;
+	font-size: 40px;
+
+}
+
+#Linux{
+	font-weight: 600;
+	color: #076bb2;
+	font-size: 40px;
+}
+
+#Mac{
+	font-weight: 600;
+	color: #076bb2;
+	font-size: 40px;
+}
+
+
+
+
+/**Blocos de destaque*/
+
+#destaque{
+	max-width: 1024px;
+	height: 320px;
+
+}
+
+.blocos{
+	width: 30.76%; /**(315/1024)*100*/
+	height: 320px;
+	float: left;
+	margin-left: 1.75%; /**----(20px/1024)*100---*/
+	border: 1px solid #dedede;
+	text-align: center;
+	position: relative; /**posicionamento do botão*/
+
+}
+
+.blocos p{
+	padding: 0pc 10px 0px 10px;
+	text-align: left;
+}
+
+.blocos a{
+	width: 100px;
+	padding: 5px 0px 5px 0px;
+	background-color: #1e73be;
+	color: #ffffff;
+	text-decoration: none;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	font-size: 0.875em;
+
+
+}
+
+
+
+
+
+
+/***********formulário de contato*************/
+
+
+#contato{
+	padding-top: 100px;
+	width: 70%;
+	margin: 0 auto;
+	
+
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	border: 1px solid #4180c5;
+	box-shadow: 5px 5px #999999;
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 10px 10px 40px 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	border: 1px solid #4180c5;
+	box-shadow: 5px 5px #999999;
+	resize: none;
+
+}
+
+#contato input[type=submit]{
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid#000000;
+	padding: 10px 25px 10px 25px;
+}
+
+/************ Rodapé **************/
+footer{
+	width: 100%;
+	background-color: #000000;
+	margin-top: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.75em;	
+}
+
+
+/*********** Tratamento responsivo *************/
+
+/******* imagens do site *******/
+img {
+	max-width: 100%; /* todas as imagens do site ficam responsivas */
+}
+
+
+/******** 1º ponto de quebra **********/
+
+@media screen and (max-width: 1058px){
+	body{
+		margin:0;
+	}
+	#main{
+		margin: 0;
+	}
+
+} 
+
+/******** 2º ponto de quebra **********/
+
+@media screen and (max-width: 1016px){
+	body{
+		margin:0;
+	}
+	#main{
+		margin: 0;
+		margin-top: 50px;
+	}
+
+} 
+
+/******** 2º ponto de quebra **********/
+
+@media screen and (max-width: 950px){
+	body{
+		margin:0;
+	}
+	#main{
+		margin: 0;
+		margin-top: 50px;
+	}
+
+	
+} 
+
+	
+
+
+/************* Smartphone ***************/
+
+@media screen and (max-width: 480px){
+	
+	/******** principal ********/
+
+	body{
+		margin: 0px;
+	}
+
+	#main{
+		margin: 0px;
+	}
+
+	#banner{
+		margin: 0px;
+		margin-top: 20px;
+	}
+
+	/********** cabeçalho *********/
+	header{
+		margin-bottom: 0px;
+		text-align: center; /*centraliza tudo*/
+	}
+
+	header img{
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	
+	/********** menu **********/
+	.Mobile{
+		display: block;
+		background-color: #000000;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 15px;
+	}
+
+	nav{
+		background-color: #000000;
+	}
+
+	nav > ul > li{
+		float: none;
+		width: 100%;
+	}
+
+	nav ul{
+		width: 100%;
+		display: none;
+	}
+	
+	/* ajuste */
+	nav ul li a{
+		text-align: left;
+	}
+
+	nav ul li a:hover{
+		transition: all 0s; /*remover efeito de transição*/		
+	}
+
+	nav li ul li{
+		background-color: #000000;
+	}
+
+	nav li ul li a{
+		background-color: #4589f7;
+		padding-left: 40px;
+	}
+
+	/* IMPORTANTE para UX no dispositivo mobile,
+	não exibir o 2º nivel do menu enquanto conteúdo
+	não for clicado	*/
+	nav li:hover ul{
+		display: none;
+	}
+
+	/****banner mobile ******/
+
+#banner{
+	margin-top: 125px;
+	height: 0px;
+	
+}
+
+#banner img{
+	filter: brightness(30%);
+
+}
+
+#banner h1{
+	position: absolute;
+	color: #ffffff;
+	padding-top: 70px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	text-transform:uppercase; /* maiuscula*/ 
+
+}
+
+/**heading*/
+
+#heading{
+	width: 90%;
+	padding: 25px;
+	margin-top: 60px;
+}
+
+#heading h2{
+	font-size: 1.2em;
+
+}
+
+/******destaque*****/
+
+#destaque{
+	max-width: 315px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.blocos{
+	width: 100%;
+	height: 320px;
+	float: none;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+
+
+	
+}
+
+#Html{
+	margin-top: 90px;
+}
+
+#Html img{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#Css{
+	margin-top: 90px;
+}
+
+#Css img{
+	margin-top: 10px;
+}
+
+
+
+
+
+
+

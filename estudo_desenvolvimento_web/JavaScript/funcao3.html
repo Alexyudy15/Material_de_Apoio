@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+
+	<script type="text/javascript">
+		
+		function elementoCor(elemento , cor){
+			document.getElementById(elemento).style.backgroundColor=cor;
+
+		}
+
+	</script>
+
+
+	<title>Função três</title>
+</head>
+<body>
+
+	<h1 id="titulo">Função JavaScript três</h1>
+	<button onclick="elementoCor('titulo','red');">Alterar o Título</button>
+	<hr>
+
+	<h2 id="subtitulo">Nova função de JavaScript</h2>
+	<button onclick="elementoCor('subtitulo','yellow');">Alterar subtitulo</button>
+	<hr>
+
+	<p id="bloco">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint consequuntur mollitia, deleniti incidunt magni porro quasi nisi enim. Distinctio soluta quibusdam, repudiandae iste amet neque ad in cumque obcaecati aliquam.</p>
+	<button onclick="elementoCor('bloco','green');">Alterar Bloco</button>
+
+	
+</body>
+</html>

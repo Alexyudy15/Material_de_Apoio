@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<h1>Acompanhe Abaixo</h1>
+	</div>
+	<div></div>
+
+<script type="text/javascript">
+	
+var v = ["Windows","Linux","Apple Store","Office","WinRar","Chrome"];
+
+var rs = function(dados){
+	var sf="";
+	for(i = 0 ; i < dados.length ; i++){
+		sf += dados[i] + "<br>";
+	}
+	return sf;
+}
+
+document.getElementsByTagName('div')[1].innerHTML=rs(v);
+
+</script>
+
+
+	
+</body>
+</html>

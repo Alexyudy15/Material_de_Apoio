@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<div id="caixa" style="width: 300px; height: 300px; background-color: red; position:absolute;"></div>
+
+	<script type="text/javascript">
+		var x= 0;
+		var direcao = "direita";
+		
+		function movimento(){
+			if (direcao=="direita") {
+				x+=5;
+				if (x < 970) {
+				document.getElementById("caixa").style.left=x+"px";
+				}
+				else{
+					direcao = "esquerda";
+				}
+			}
+
+//====================================================================================
+			
+			else 
+			{
+				x-=5;
+				document.getElementById("caixa").style.left=x+"px";
+				if(x < 10)
+					direcao="direita";
+			}
+
+}
+		window.setInterval(movimento,10);
+
+
+
+	</script>
+
+
+
+</body>
+</html>

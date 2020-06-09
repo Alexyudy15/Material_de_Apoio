@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>cores hexadecimal</title>
+
+	<script type="text/javascript">
+		function gerar(){
+
+			var cx = document.getElementById("caixa");
+
+			var hex = [
+				"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"
+			];
+
+			for(i = 0; i < 300; i++){
+
+
+			var r = Math.round(Math.random()*15);
+			var g = Math.round(Math.random()*15);
+			var b = Math.round(Math.random()*15);
+
+			var cor = "#"+hex[r]+hex[r]+hex[g]+hex[g]+hex[b]+hex[b];
+
+
+
+				cx.innerHTML +="<div style=\"width:50px; height:50px; float:left; margin:2px; font-size:9pt; background-color:"+cor+"\">"+cor+"</div>";
+				}
+			
+			}
+		
+
+	</script>
+
+</head>
+<body>
+	<button onclick="gerar();">Gerar Cores</button>
+	<div id="caixa" style="width: 90%; height: 1000px;"></div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,78 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+}
+.navbar{
+	overflow: hidden;
+	background-color: #000000;
+	font-family: arial;
+}
+.navbar a{
+	float: left;
+	font-size: 12pt;
+	color: #fff;
+	padding: 14px 16px;
+	text-decoration: none;/**tira o _ abaixo das letras*/
+}
+.dropdown{
+	float: left;
+	overflow: hidden;
+}
+.dropdown .dropbtn{
+	font-size: 12pt;
+	border: 0;
+	outline: none;
+	padding: 14px 16px;
+	font: inherit; 
+	background-color:inherit;
+	margin: 0;
+	color: #fff; 
+	cursor: pointer;/**coloca a mãozinha no cursor do mouse*/
+}
+.navbar a:hover, .dropdown:hover .dropbtn{
+	background-color: red;
+}
+.dropdown-content{
+	display: none;/*Oculta a vizualização do conteudo */
+	position: absolute;
+	background-color: #333;
+	width: 100%;
+	left: 0;
+	box-shadow: 5px 5px 10px #333;
+	z-index: 10;
+}
+.dropdown-content .header{
+	background-color: #ff0000;
+	padding: 10px;
+	color: #ffffff;
+
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+	transition: ease .5s;
+
+}
+.col{
+	float: left;
+	width: 33.3%;
+	padding: 10px;
+	background-color: #555;
+	height: 320px;
+}
+.col a{
+	color: #000;
+	padding: 16px;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+	float: none;
+}
+.col a:hover{
+	padding: 10px;
+	transition: ease 0.8s;
+	color-background: #fff;
+	box-shadow: 5px 5px 10px;
+}

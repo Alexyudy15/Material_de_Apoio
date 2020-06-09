@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+
+	<script type="text/javascript">
+		function textoElemento(CorTXT , Elemento){
+			document.getElementById(Elemento).style.color=CorTXT;
+
+		}
+
+		function fundoelemento(CorFundo, elemento){
+			document.getElementById(elemento).style.backgroundColor=CorFundo;
+
+		} 
+	</script>
+
+	<title>Document</title>
+</head>
+<body>
+	<div style="display:inline-block;">
+
+	<div id="caixa1" style="width:200px;height: 200px; float: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam explicabo magnam, ducimus cum reprehenderit veritatis eligendi voluptatem animi voluptate blanditiis dignissimos voluptas deleniti perferendis, sint labore a. Debitis, omnis, voluptate!</div>
+	
+	<div id="caixa2" style="width:200px;height: 200px; float: right;">Inventore aperiam fuga rem necessitatibus natus sunt amet nobis, mollitia, cupiditate voluptatum nihil tenetur. Deserunt velit laudantium deleniti, maiores architecto consectetur at, eligendi tempora facere omnis, quis totam quas. Quasi.</div>
+	
+	</div>
+	<hr>
+
+	<h3>Cor para o texto </h3>
+	<ul>
+		<li>
+			<a href="#" onclick="textoElemento('red', 'caixa1');">Texto Vermelho</a>
+			<a href="#" onclick="textoElemento('green','caixa1');">Texto Verde</a>
+			<a href="#" onclick="textoElemento('orange', 'caixa1');">Texto Laranja</a>
+			<a href="#" onclick="textoElemento('blue', 'caixa1');">Texto Azul></a>
+		</li>
+	</ul>
+
+  <h3>Cor para o fundo </h3>
+	<ul>
+		<li>
+			<a href="#" onclick="fundoelemento('black', 'caixa1');">Fundo preto</a>
+			<a href="#" onclick="fundoelemento('blue','caixa1');">Fundo Azul</a>
+			<a href="#" onclick="fundoelemento('yellow', 'caixa1');">Fundo Amarelo</a>
+			<a href="#" onclick="fundoelemento('green', 'caixa1');">Fundo Verde></a>
+			</li>
+	</ul>
+
+	
+</body>
+</html>

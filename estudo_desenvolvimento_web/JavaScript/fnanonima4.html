@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<div>
+		<h1>Números pares</h1>
+	</div>
+	<div>
+		<hr>
+	</div>
+	<div></div>
+	<script type="text/javascript">
+
+		var v= ["10","5","63","48","120","77","52","11","24"];
+
+		var rs = function (par){
+			var pares="";
+
+			for(i = 0 ; i <par.length; i++){
+			if(par [i] % 2 == 0){
+				p+=par[i]+ "<br>";
+			
+		}
+
+				
+			}
+			return rs;
+			
+		}
+
+		document.getElementsByTagName('div')[2].innerHTML=rs(v);
+
+
+	</script>
+</body>
+</html>

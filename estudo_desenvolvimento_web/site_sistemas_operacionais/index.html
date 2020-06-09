@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<!-- favicon -->
+	<link rel="icon" href="imagens/favicon.png"> 
+	<title>Home - html5 css3</title>
+	<!-- SEO Importante -->
+	<meta name = "description" content = "Aprenda html5 e css3 de forma simples e prática">
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+	<!-- Link com a folha de estilo -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- estrutura principal -->
+	<div id="main">
+
+		<!-- cabeçalho -->
+		<header>
+			<a href="index.html"><img src="imagens/logo.jfif" title="HTML5 + CSS3" alt="Logotipo do site"></a>
+		</header>
+
+		<!-- menu -->
+		<nav class="Menu">
+			<!-- Classe usada para fixar menu no JS -->
+		<!-- &#9776 (desenho 3 linhas horizontais-->
+		<a href="#" class="Mobile">&#9776; Menu</a>
+			<!-- ul>li*4>a -->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="#" class="Detalhes">Conteúdo </a>
+					<ul>
+						<li><a href="conteudo/conhecasistemas.html">Diferença dos SO</a></li>
+						<li><a href="conteudo/css3.html">Distribuições</a></li>
+						<li><a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqyuy7U1YjGgBv0x2Hzuw569" target="_blank">javascript</a></li>
+					</ul>
+				</li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+
+		<!-- conteúdo -->
+		<section id="banner">
+			<img src="imagens/banner.jpg" alt="Curso básico de html5 e css3">
+			<h1>Sistemas Operacionais</h1>
+		</section>
+
+		<section id="heading">
+			<h2><span id="Mac">Apple</span>,<span id="Windows">Windows</span>, <span id="Linux">Linux</span></h2>
+			<h2>O que elas tem em comum?</h2>
+		</section>
+
+		<section id="destaque">
+			<!-- bloco 1 -->
+			<div class="blocos">
+			<img src="imagens/appleindex.jpg" alt="">
+			<h2>Apple</h2>
+			<h3>By: Steve Jobs</h3>
+			<a href="https://www.apple.com/br/?afid=p238%7CsikJb1MHC-dc_mtid_1870765e38482_pcrid_267796070830_&cid=aos-br-kwgo-brand--slid--product-" target="_blank";>Saiba mais...</a>
+			</div>
+			
+			<!-- bloco 2 -->
+			<div class="blocos">
+			<img src="imagens/winindex.jpg" alt="">
+			<h2>Windows</h2>
+			<h3>By: Bill Gates</h3>
+			
+			<a href="https://www.microsoft.com/pt-br/windows" target="_blank";>Saiba mais...</a>
+			</div>
+
+			<!-- bloco 3 -->
+			<div class="blocos">
+			<img src="imagens/linuxindex.jpg" alt="">
+			<h2>Linux</h2>
+			<h3>By: Linus Torvalds</h3>
+			<a href="https://www.linux.org/" target="_blank";>Saiba mais...</a>
+			</div>
+		</section>
+
+		<!-- rodapé -->
+		<footer>
+			<p>©2018 - Alex Yudy Kitahara</p>			
+		</footer>
+	</div>
+<script src="js/menuresponsivo.js"></script>
+<script src="js/fixamenu.js"></script>
+<script src="js/removeclick.js"></script>
+<script src="js/tela.js"></script>	
+</body>
+</html>

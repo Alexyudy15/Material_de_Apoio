@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+
+	<script type="text/javascript">
+		function mudarFundo(){
+			var cor = document.getElementById("cor").value;
+			document.bgColor=cor;
+			console.log(cor);
+		}	
+
+
+	</script>
+
+	<title>Document</title>
+</head>
+<body>
+	<h3> Escolha uma cor para o fundo</h3>
+
+	<input type="color" id="cor" style="width:100px;height: 100px;">
+
+	<button onclick="mudarFundo();">Mudar a cor do Fundo</button>
+	
+</body>
+</html>

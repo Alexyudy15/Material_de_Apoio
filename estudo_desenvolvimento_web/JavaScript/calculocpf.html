@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculo de CPF</title>
+
+    <script type="text/javascript">
+    	
+    	var cpf; // guardar o cpf digitado pelo usuário
+    	var cpf9; // guardar os 9 primeiros números do cpf 
+    	var cont10 = 10; //multiplica os pesos decrescente de 10 a 2 para calcular com o cpf 
+    	var cont11 = 11; //multiplica os pesos decrescente de 11 a 2 para calcular com o cpf 
+    	var resto = 0; // Guarda o resto da divisão
+    	var rs = 0; // Guarda a soma dos resultados da multiplicação
+
+
+    	cpf = prompt("Digite o seu CPF");
+
+    	/* Vamos capturas os 9 primeiros digitos do usuário.
+    	Para isso iremos usar o comando substring. Onde 
+    	passaremos 2 dasos. o primeiro é a posição que iremos iniciar
+    	a captura dos números e o segundo é a quantidade de números
+    	que iremos pegar. 
+    	*/
+
+    	cpf9 = cpf.substring(0,9);
+    	alert(cpf9);
+
+    	// esse (vetor) com laço (for) alinha e coloca 1 numero em casa casa
+    	//todos separadamente
+    	for( i = 0 ; i <= 8 ; i++){
+    		rs += cont10 * cpf9[i];
+    		cont10--;
+
+    		console.log(cpf9[i]+" = " +rs);
+
+
+    	}
+
+    	/*
+    	A variável resto está guardando o resto da divisão
+    	 entre os valores contido em rs e 11 (Qtd num cpf)
+    	*/
+
+    	resto = rs % 11;
+
+    	// se o resto da divisão for menor que 2, então o
+    	//primeiro digito do cpf será 0 (zero)
+		// Senão, fazemos o cálculo de subtração entre o
+    	// resto da divisão e o número 11
+    	if(resto < 2)
+    		cpf9 = cpf9+0;
+    	else 
+    		cpf9 = cpf9+(11-resto);
+
+    	alert("Encontramos o primeiro digito:\n"+cpf9);
+
+    	rs = 0; //zerando a variável rs para realizaro segundo cálculo
+
+    	for( i = 0; i <= 9; i++){
+    		rs += cont11 * cpf9[i];
+    		cont11--;
+
+    	}
+
+    	resto = rs % 11;
+
+    	if(resto <2)
+    		cpf9 = cpf9+0;
+		else
+		cpf9 = cpf9+(11-resto);
+		alert("Encontramos o segundo digito\n"+cpf9);
+
+		if(cpf.==(cpf9))
+		alert("CPF Válido");
+		
+		else
+			alert("CPF Inválido");
+
+
+
+    </script>
+
+
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,41 @@
+/**
+*Exemplo de layout
+*@ Author Alex Yudy
+*Data 26/09/2018
+*/
+
+*{
+	margin:0px;
+	padding: 0px;
+
+}
+
+body{
+	font-family: sans-serif;
+}
+
+.layout{
+	height: 350px;
+	padding-top: 200px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.layout p {
+	text-align: center;
+	color: #e3e4e5;
+	font-size: 2.5em;
+}
+
+.DivTexto{
+	background-color: #ffffff;
+
+}
+
+.Destaque{
+	padding: 150px 0px 150px 0px; /* box model */
+	max-width: 1024px;
+	margin: 0 auto;
+}

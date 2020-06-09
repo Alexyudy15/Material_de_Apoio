@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="utf-8"> 
+<head>
+	<title>Tabuada</title>
+
+    <script type="text/javascript">
+    	function tabuada(){
+    		var n, rs="";
+    		n=prompt("Digite um número para fazer a tabuada");
+
+    		for(i = 1; i <= 10; i++){
+    			rs += n + "x" + i + "="+(n*i)+"<br>";
+    		}
+
+    		document.getElementById("Saida").innerHTML=rs;
+    	}
+
+    </script>
+
+
+
+</head>
+<body>
+<h2 id="Saida"></h2>
+
+
+<a href="#" onclick="tabuada();">Fazer tabuada</a>
+
+
+</body>
+</html>

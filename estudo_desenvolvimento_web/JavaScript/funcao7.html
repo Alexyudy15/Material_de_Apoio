@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+
+	<script type="text/javascript">
+		function criar(){
+			var conteudo = document.getElementById("cores");
+			
+			conteudo.innerHTML = "";
+
+			//document.bgColor="#"+vm1+""+vm2+""+vd1+""+vd2+""+az1+""+az2;
+
+
+			for (i = 1; i <= 200 ; i++){
+
+				var vm1 = Math.round(Math.random()*9);
+			var vm2 = Math.round(Math.random()*9);
+			
+			var vd1 = Math.round(Math.random()*9);
+			var vd2 = Math.round(Math.random()*9);
+
+			var az1 = Math.round(Math.random()*9);
+			var az2 = Math.round(Math.random()*9);
+
+			var fundo = "#"+vm1+""+vm2+""+vd1+""+vd2+""+az1+""+az2;
+
+
+		conteudo.innerHTML+="<div style=\"border:0px solid #000;width:30px; height:30px;margin:3px;background-color:"+fundo+";float:left\"></div>"
+	}
+
+
+
+		}
+
+
+	</script>
+	
+	<title>Document</title>
+
+
+</head>
+<body>
+	<button onclick="criar();">Criar Cores</button>
+	<br>
+	<div id="cores" style="width: 1000px;height: 500px"></div>
+	
+</body>
+</html>
