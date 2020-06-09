@@ -1,0 +1,7 @@
+menu drop responsivo
+
+ajustes:
+- aumentar fonte do menu primário
+- criar uma borda suave entre os blocos
+- ajustar largura do menu secundário desktop
+- ajustar a fixação do menu

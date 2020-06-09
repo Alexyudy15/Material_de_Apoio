@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<!-- favicon -->
+	<link rel="icon" href="imagens/favicon.png"> 
+	<title>Contato - html5 css3</title>
+	<!-- SEO Importante -->
+	<meta name = "description" content = "Página de contato">
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+	<!-- Link com a folha de estilo -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- estrutura principal -->
+	<div id="main">
+
+		<!-- cabeçalho -->
+		<header>
+			<a href="index.html"><img src="imagens/logo.jfif" title="HTML5 + CSS3" alt="Logotipo do site"></a>
+		</header>
+
+		<!-- menu -->
+		<nav class="Menu">
+			<!-- Classe usada para fixar menu no JS -->
+		<!-- &#9776 (desenho 3 linhas horizontais-->
+		<a href="#" class="Mobile">&#9776; Menu</a>
+			<!-- ul>li*4>a -->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="#" class="Detalhes">Conteúdo </a>
+					<ul>
+						<li><a href="conteudo/conhecasistemas.html">Conheça os SO</a></li>
+						<li><a href="conteudo/cs3.html">Distribuições</a></li>
+						<li><a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqyuy7U1YjGgBv0x2Hzuw569" target="_blank">javascript</a></li>
+					</ul>
+				</li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+
+		<!-- Formulario de contato-->
+		<div id="contato">
+			<h1>Formulário de Contato</h1>
+			<form action="formulario.php" method="POST">
+				<input type="text" name="nome" placeholder="nome">
+				<input type="text" name="email" placeholder="E-Mail">
+				<textarea name="mensagem" placeholder="Mensagem"></textarea>
+				<input type="submit" value="Enviar" >
+			</form>
+
+		</div>
+
+		
+		<!-- rodapé -->
+		<footer>
+			<p>©2018 - Professor José de Assis</p>			
+		</footer>
+	</div>
+<script src="js/menuresponsivo.js"></script>
+<script src="js/fixamenu.js"></script>
+<script src="js/removeclick.js"></script>	
+</body>
+</html>
