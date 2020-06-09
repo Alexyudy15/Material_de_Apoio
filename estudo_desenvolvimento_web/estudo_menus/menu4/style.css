@@ -1,0 +1,60 @@
+/**
+* Estudo dos menus
+* menu drop (submenu)
+* @Author Alex Yudy Kitahara
+* Data 01/10/2018
+*/
+
+body{
+	font-family: sans-serif;
+}
+
+nav{
+	width: 100%;
+	height: 48px;
+	background-color: #000616;
+}
+
+/**
+.Primeiro{
+	float: left;
+}*/
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+/**Usando o sinal">" o estilo é aplicado somente ao caminho indicado, não estilizando
+ os demais <li> do segundo nivel */
+
+ nav >ul >li{
+ 	float: left;
+ }
+
+ nav ul li a{
+ 	text-decoration: none;
+ 	background-color: #000616;
+ 	color: #ffffff;
+	padding: 15px;
+	margin: 0px;
+	display: block;
+ }
+ nav ul li a:hover{
+ 	background-color: #00bccc;
+ 	transition: all 0.4s;
+}
+
+nav li ul{
+	display: none;/** esconder um conteudo*/
+
+}
+
+nav li:hover ul{
+	display: block; /**mostrar conteudo*/
+}
+
+
+
+

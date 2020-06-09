@@ -1,0 +1,47 @@
+/**Formatação menu lateral e sua pagina*/
+body{
+	font-family: "Lato", sans-serif;
+	/*transition: background-color .5s;*/
+}
+
+.sidenav{
+	height: 100%;
+	width: 0;
+	position:fixed;
+	z-index: 100;
+	top:0;
+	left: 0;
+	background-color: #000000;
+	overflow: hidden;
+	transition: 0,5s;
+	padding-top: 100px;
+
+
+}
+
+.sidenav a{
+	text-decoration: none;
+	color: #ffffff;
+	display: block;
+	transition: ease .5s;
+}
+
+.sidenav a:hover{
+	padding-left: 15px;
+}
+
+.sidenav .btnfechar{
+	position: absolute;
+	top:0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#estrutura{
+	transition: ease .5s;
+}
+
+
+
+

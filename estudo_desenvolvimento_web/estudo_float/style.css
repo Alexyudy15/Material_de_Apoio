@@ -1,0 +1,39 @@
+/**
+*Estudo do float
+*@Author Alex Yudy Kitahara
+* Date 26/09/2018
+*
+*/
+
+/*
+float: rigth(flutua a direita do elemento anterior)
+float: rigth(flutua a direita do elemento anterior)
+*/
+
+
+
+
+
+#vermelho{
+	background-color: #FF0000;
+	width: 250px;
+	height: 250px;
+	float: left;
+}
+
+#verde{
+	background-color: #008000;
+	width: 250px;
+	height: 250px;
+	float: left;
+}
+
+#azul{
+	background-color: #0000FF;
+	width: 250px;
+	height: 250px;
+	float: left;
+	
+
+
+}

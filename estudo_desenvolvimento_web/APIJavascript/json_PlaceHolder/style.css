@@ -1,0 +1,83 @@
+body{
+	font-family: sans-serif;
+	background-color: rgb(255,246,181);
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+header{
+	background: rgba(0, 0, 0, .8);
+	color: rgb(255,255,255);
+	text-align: center;
+	font-family: arial;
+	font-size: 15px;
+	margin-bottom: 0%;
+	padding: 2% 0;
+	width: 100%;
+	z-index: 10000;
+}
+
+nav{
+	width: 100%;
+
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	background-color: #000000;
+	overflow: hidden; /** completar a largura total com o background(formar o menu)*/
+}
+
+nav > ul > li{
+	float: left;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 15px;
+	display: block;
+}
+
+nav ul li a:hover{
+	background-color: #00bccc;
+	transition: all 0.27; 
+
+}
+
+nav li ul{
+	display: none;
+}
+
+nav li:hover ul{
+	display: block;
+	position: absolute;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card{
+	margin: 1rem;
+	box-shadow: 2px 2px 5px #333;
+
+}
+
+@media screen and (min-width: 600px){
+	.card{
+		flex: 1 1 calc(50% - 2rem);
+	}
+}
+
+@media screen and (min-width: 900px){
+	.card{
+		flex: 1 1 calc(33% - 2rem);
+	}
+}
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>PlaceHolder</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+	<h1>Json - Place Holder</h1>
+
+	</header>
+
+	<div>
+		
+	<nav>
+		<ul>
+			<!--uso da classe para definir estilo só ao primeiro nivel do menu-->
+			<li class="primeiro"><a href="">Users</a></li>
+			<li class="segundo"><a href="">Todos</a></li>
+			<li class="terceiro"><a href="">Photos</a>
+			<li class="quarto"><a href="">albums</a></li>
+			<li class="quinto"><a href="">comments</a></li>
+			<li class="sexto"><a href="">posts</a></li>
+
+		
+		</ul>
+	</nav>
+
+	<script type="text/javascript">
+
+		
+		var logo = document.createElement("img");
+
+		
+		var container = document.createElement("div");
+
+		
+		container.setAttribute("class","container");
+
+		
+		app.appendChild(logo);
+		app.appendChild(container);
+
+		
+		var url = 'https://jsonplaceholder.typicode.com/users';
+
+		
+		var request = new XMLHttpRequest();
+		request.open('GET',url,true);
+		request.onload = function(){
+			
+
+			
+			if(request.status >= 200 && request.status >=4){
+
+				data.forEach(users =>{
+
+				
+				var card = document.createElement("div");
+				card.setAttribute("class","card");
+
+				var h1 = document.createElement("h1");
+				h1.textContent = users.id;
+				card.appendChild(h1);
+			
+				var h2 = document.createElement("h2");
+				h2.textContent = users.name;
+				card.appendChild(h2);
+				
+				var h2 = document.createElement("h2");
+				h2.textContent = users.username;
+				card.appendChild(h2);
+
+				var h3 = document.createElement("h3");
+				h3.textContent = users.email;
+				card.appendChild(h3);
+
+
+				container.appendChild(card);
+				card.appendChild(p);
+
+				
+
+			});
+			}
+			else{
+				console.log("Erro ao tentar ler api");
+
+			}
+
+		}
+		request.send();
+
+	</script>	
+
+
+
+
+	
+</body>
+</html>

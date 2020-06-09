@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Filmes</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		
+		<h1>Filmes - Lançamentos</h1>
+
+	</header>su
+
+	<div id="root">
+		
+	</div>
+
+
+	<script type="text/javascript">
+		//vamos criar uma variável para representar a div raiz
+		var app = document.getElementById("root");
+
+		//vamos adcionar um logo ao nosso projeto
+		var logo = document.createElement("img");
+
+		// vamos criar uma variável para trabalhar com o conteúdo 
+		//vindo da api
+		var container = document.createElement("div");
+
+		//adcionando ao container uma formatação de css do 
+		//estilo class
+		container.setAttribute("class","container");
+
+		//adcionando todo o conteudo a div principal(root)
+		app.appendChild(logo);
+		app.appendChild(container);
+
+		//Vamos apontar e carregar o endereço do api json
+		//contendo os filmes.
+		var url = 'https://ghibliapi.herokuapp.com/films';
+
+		/**
+		para realizar a requisição a uma api usando javascript, iremos usar
+		uma classe chamada XMLHTTPRequest. com ela será possivel fazer uso
+		de todos os verbos de um api rest
+		*/
+
+		var request = new XMLHttpRequest();
+		request.open('GET',url,true);
+		request.onload = function(){
+			
+
+			//carregando os dados sobre os filmes direto da api
+			var data = JSON.parse(this.response);
+			if(request.status >= 200 && request.status >=4){
+
+				data.forEach(movie =>{
+
+				//uma pequena caixa que irá armazenar os filmes
+				var card = document.createElement("div");
+				card.setAttribute("class","card");
+
+				var h1 = document.createElement("h1");
+				h1.textContent = movie.title;
+			
+				var h2 = document.createElement("h2");
+				h2.textContent = movie.director;
+				card.appendChild(h2);
+				
+				var h2 = document.createElement("h2");
+				h2.textContent = movie.producer;
+				card.appendChild(h2);
+
+				var h3 = document.createElement("h3");
+				h3.textContent = movie.release_date;
+				card.appendChild(h3);
+
+				var p = document.createElement("p");
+				movie.description = movie.description.substring(0,300);
+				p.textContent = movie.description;
+
+				container.appendChild(card);
+				card.appendChild(h1);
+				card.appendChild(p);
+
+				
+
+			});
+			}
+			else{
+				console.log("Erro ao tentar ler api");
+
+			}
+
+		}
+		request.send();
+
+	</script>		
+	
+</body>
+</html>
