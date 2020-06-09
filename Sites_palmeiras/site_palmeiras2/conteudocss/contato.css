@@ -1,0 +1,93 @@
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+
+}
+
+body{
+
+	margin:0;
+	font-family: sans-serif;
+}
+
+#banner{
+	width: 100%;
+}
+
+
+
+
+
+/***************************************************************************************************************/
+
+
+
+/*************************************Conteudo*********************************************************/
+
+/***********formulário de contato*************/
+
+
+#contato{
+	padding-top: 100px;
+	width: 70%;
+	margin: 0 auto;
+	
+
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	border: 1px solid #17633a;
+	box-shadow: 5px 5px #999999;
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 10px 10px 40px 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	border: 1px solid #17633a;
+	box-shadow: 5px 5px #999999;
+	resize: none;
+
+}
+
+#contato input[type=submit]{
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid#17633a;
+	padding: 10px 25px 10px 25px;
+}
+
+/************ Rodapé **************/
+footer{
+	width: 100%;
+	background-color: #000000;
+	margin-top: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.75em;	
+}
+
+
+
+
+
+/**********************************rodapé******************************************************/
+
+footer{
+	width: 100%;
+	background-color: #17633a;
+	margin-top: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.75em;	
+}

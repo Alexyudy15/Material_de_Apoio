@@ -1,0 +1,346 @@
+/**
+*Meu style do Palmeiras
+*@ Author Alex Yudy
+*Data 26/09/2018
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+
+}
+
+body{
+	
+	margin:0;
+	font-family: sans-serif;
+}
+
+#banner{
+	width: 100%;
+}
+
+.navbar{
+	overflow: hidden;
+	background-color: #000000;
+	font-family: arial;
+	margin-top: -5px;
+}
+.navbar a{
+	float: left;
+	font-size: 12pt;
+	color: #fff;
+	font-weight: bold;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+
+h3{
+	color: #17633a;
+
+
+}
+
+.Mobile{
+	display: none;
+}
+
+.Fixar{
+	margin: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: ease 1s;
+	z-index: 10000;
+
+}
+
+
+
+/***************************************************************************************************************/
+#destaque{
+	max-width: 1024px;
+	height: 350px;
+
+}
+
+.blocos{
+	width: 30.76%; /**(315/1024)*100*/
+	height: 250px;
+	float: left;
+	top: 60px;
+	margin-left: 2.00%; /**----(20px/1024)*100---*/
+	border: 1px solid #dedede;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+
+
+}
+
+
+
+.blocos img{
+	width: 350px;
+	height: 250px;
+
+	
+}
+/*************************************Conteudo*********************************************************/
+
+h1{
+	position: relative;
+	left:700px;
+	top: 50px;
+	font-size: 35pt;
+	font-family: 'Dosis', sans-serif;
+}
+
+
+h2{
+	top: 70px;
+	position: relative;
+	padding-bottom:50px;
+	font-size: 20pt;
+	font-family: 'Dosis', sans-serif;
+}
+
+
+
+
+
+/**********************************rodapé******************************************************/
+
+footer{
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	background-color: #000000;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.75em;	
+}
+
+footer img{
+	float: right;
+	position: relative;
+	bottom: 45px;
+	right: 55px;
+	padding: 4px;
+	cursor: pointer;
+
+}
+
+h3{
+	position: relative;
+	float: left;
+	bottom: 55px;
+	left: 35pt;
+	font-size:25pt;
+	font-family: 'Dosis', sans-serif;
+	color: #ffffff;
+	padding: 5px;
+
+}
+
+p{
+	font-size: 13pt;
+	font-weight: bold;
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	line-height: 28px;
+	color: #ffffff;
+}
+
+/************* Smartphone ***************/
+
+@media screen and (max-width: 480px){
+	
+	/******** principal ********/
+
+	body{
+		margin: 0px;
+
+	}
+
+	#layout{
+	width: 100%;
+}
+
+	#main{
+		margin: 0px;
+
+	}
+
+	/********** cabeçalho *********/
+	header{
+		margin-bottom: 0px;
+		text-align: center; /*centraliza tudo*/
+	}
+
+	header img{
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	
+	/********** menu **********/
+	.Mobile{
+		display: block;
+		background-color: #000000;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 15px;
+
+	}
+
+	nav a{
+		display: none;
+	}
+
+
+	nav ul{
+		width: 100%;
+		display: none;
+	}
+	
+
+	nav div a{
+		float: none;
+		width: 100%;
+		text-align: left;
+		transition: all 0s;
+		background-color: #000000;
+		padding-left: 40px;
+
+		}
+
+		/**************rodapé***********/
+
+	footer{
+	width: 100%;
+	background-color: #000000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.75em;	
+}
+
+footer img{
+	float: right;
+	position: relative;
+	bottom: 45px;
+	right: 5px;
+	padding: 3px;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+
+}
+
+h3{
+	position: relative;
+	float: left;
+	bottom: 50px;
+	left: 20pt;
+	font-size:15pt;
+	font-family: 'Dosis', sans-serif;
+	color: #ffffff;
+	padding: 5px;
+
+}
+
+p{
+	font-size: 9pt;
+	font-weight: bold;
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	line-height: 28px;
+	color: #ffffff;
+}
+
+
+h1{
+	position: relative;
+	left:900px;
+	top: 50px;
+	font-size: 35pt;
+	font-family: 'Dosis', sans-serif;
+}
+
+
+h2{
+	top: 70px;
+	position: relative;
+	padding-bottom:50px;
+	font-size: 20pt;
+	font-family: 'Dosis', sans-serif;
+}
+
+
+
+/******destaque*****/
+
+#destaque{
+	max-width: 315px;
+	height: 900px;
+	margin: 0 auto;
+}
+
+.blocos{
+	width: 100%;
+	height: 250px;
+	float: none;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+}
+
+
+@media screen and (max-width: 768px){
+
+	#destaque{
+	max-width: 310px;
+	height: 900px;
+	margin: 0 auto;
+}
+
+.blocos{
+	width: 100%;
+	height: 250px;
+	float: none;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+
+h1{
+	position: relative;
+	left:300px;
+	top: 50px;
+	font-size: 35pt;
+	font-family: 'Dosis', sans-serif;
+}
+
+
+h2{
+	top: 70px;
+	position: relative;
+	padding-bottom:50px;
+	font-size: 20pt;
+	font-family: 'Dosis', sans-serif;
+}
+
+
+
+}
+
+
+
